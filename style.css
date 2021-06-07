@@ -1,0 +1,110 @@
+body,h1,h2,h3,h4,h5,h6,a,p,span,small{
+    font-family: 'Spartan', sans-serif;
+}
+/* header-part */
+.my_header{
+    background: #e0e0e0;
+    padding: 0;
+}
+.header_logo img{
+    width: 30%;
+}
+.header_menu{
+    margin-right: 15px;
+}
+.header_menu li{
+    position: relative;
+    padding:31px 15px;
+    
+}
+.header_menu li a{
+    text-decoration: none;
+    color: #111;
+    position: relative;
+    transition: .5s;
+    
+}
+.header_menu li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 260%;
+	height: 4px;
+	width: 0%;
+	background-color: #3763eb;
+	transition: .5s;
+}
+.header_menu li:hover > a{
+    color: #3763eb;
+}
+.header_menu li:hover > a::after{
+    width: 50%;
+}
+/* dropdown */
+.header_menu li ul{
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 100%;
+    left:0%;
+    transition: .5s;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+.header_menu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.header_menu li ul li{
+    list-style: none;
+    padding: 0;
+}
+.header_menu li ul li a{
+    display: block;
+    padding: 5px 10px;
+    background-color: #3763eb;
+    color: #fff;
+}
+.header_menu li ul li:hover > a{
+    color: #fff;
+}
+.header_menu li ul li:hover > a::after{
+    width: 0;
+}
+
+.header_btn{}
+.header_btn a{
+    color: #3763eb !important;
+    padding: 10px 30px;
+    background: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: .5s;
+}
+.header_btn a:hover{
+    background-color:#3763eb ;
+    color: #fff !important;
+}
+/* banner_section */
+.banner_section{
+    background-color: #f6f9fc;
+    position: relative;
+    overflow: hidden;
+}
+.banner_height{
+    height: 500px;
+}
+.banner_content{}
+.banner_content h2{font-size: 40px;font-weight: 600;color: #0a1a2a;margin-bottom: 25px;}
+.banner_content p{font-size: 14px;color: #707070;margin-bottom: 22px;}
+.banner_content .header_btn a{background: #3763eb;color: #fff !important;margin-top: 20px;}
+
+.banner_img_div img{
+    width: 60%;
+    position: absolute;
+    border-radius: 50%;
+    top: -125px;
+}
